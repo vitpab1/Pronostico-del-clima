@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(black));
+  background: linear-gradient(black);
+  font-size: 120%;
+  -webkit-backdrop-filter: brightness(70%) blur(2px);
+          backdrop-filter: brightness(70%) blur(2px);
+  background-size: cover;
+}
+
+.weather {
+  color: white;
+  font-weight: 5000;
+  text-shadow: black;
+  text-align: center;
+  margin-top: 7em;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin-left: -50px;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0em 0.3em;
+  border-bottom: 3px solid white;
+  background: transparent;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+h1.temp {
+  margin: 0;
+  font-size: 3em;
+}
+
+.flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
